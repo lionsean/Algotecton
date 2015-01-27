@@ -1,0 +1,36 @@
+int x1=500;
+int x2=200;
+int y1=150;
+int y2=200;
+
+PFont font;
+
+void setup(){
+  size(900,500);
+  smooth();
+  font=loadFont("Cambria-48.vlw");
+  textFont(font);
+}
+
+void draw(){
+  background(102);
+  if(keyPressed&&(key==CODED)){
+    if(keyCode==LEFT){
+      x1--;
+      x2+=2;
+    }else if(keyCode==RIGHT){
+      x1++;
+      x2-=2;
+    }else if(keyCode==UP){
+      y1--;
+    }else if(keyCode==DOWN){
+      y1++;
+    }
+  }
+  textSize(60);
+  text("HAPPY 2015!",x1,y1);
+  for(int y2=0;y2<height;y2+=40){
+  textSize(36);
+  text("Heavy Snow!!!",x2,y2);
+  }
+}
