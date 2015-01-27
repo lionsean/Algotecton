@@ -1,0 +1,11 @@
+void setup(){
+  size(500,500);
+}
+
+void draw(){
+  float x=random(1,500);
+  float y=random(1,500);
+  float w=random(1,500);
+  float h=(int)random(1,500);
+  line(x,y,w,h);
+}
