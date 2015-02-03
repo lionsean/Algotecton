@@ -10,6 +10,7 @@ void setup() {
   
   cp5.addSlider("gValue")
   .setPosition(100,125)
+  .setSize(100,20)
   .setRange(0,255);
 }
 
